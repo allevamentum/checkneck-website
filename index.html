@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckNeck — Da Vinci's Codex for Perfect Posture</title>
+    <meta name="description" content="AirPods-powered posture coaching built on the Golden Ratio. No camera. No wearable. Just geometry.">
+    <meta property="og:title" content="CheckNeck — Posture Intelligence">
+    <meta property="og:description" content="AirPods-powered posture coaching. No camera. No wearable. Just put on your AirPods.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ━━━ Navigation ━━━ -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <svg id="navLogo" class="nav-logo-svg" viewBox="0 0 40 40" width="40" height="40"></svg>
+                <span class="nav-wordmark">Check<strong>Neck</strong></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#monitor">Live Monitor</a>
+                <a href="#features">Features</a>
+                <a href="#app-preview">App Preview</a>
+                <a href="#technology">Technology</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#download" class="nav-cta">Download Free</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ━━━ Hero ━━━ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-nebula hero-nebula--1"></div>
+            <div class="hero-nebula hero-nebula--2"></div>
+            <div class="hero-nebula hero-nebula--3"></div>
+            <div id="goldenDust" class="golden-dust"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text" data-anim="fade-up">
+                <span class="badge mono"><span class="badge-dot"></span> DA VINCI'S CODEX</span>
+                <h1 class="hero-title serif">The geometry<br>of a <em class="gold-text">perfect spine.</em></h1>
+                <p class="hero-desc">CheckNeck uses your AirPods' built-in motion sensors to track your head position in real-time. No camera. No wearable. Just put on your AirPods and let Da Vinci's geometry fix your posture.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg> Download Free</a>
+                    <a href="#monitor" class="btn btn-ghost">Try Live Monitor</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-anim="fade-in" data-delay="200">
+                <div class="hero-icon-wrap">
+                    <div class="hero-rings-bg">
+                        <svg id="heroRings" viewBox="0 0 320 320" width="320" height="320"></svg>
+                    </div>
+                    <div class="hero-app-icon">
+                        <svg id="heroSpineMark" viewBox="0 0 240 240" width="240" height="240"></svg>
+                    </div>
+                </div>
+                <div class="hero-logotype">
+                    <span class="logotype-check">Check</span><strong class="logotype-neck">Neck</strong>
+                    <div class="logotype-sub mono">POSTURE INTELLIGENCE</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats" data-anim="fade-up" data-delay="400">
+            <div class="hero-stat">
+                <span class="hero-stat-value mono" data-count="4.9" data-suffix="">4.9</span>
+                <span class="hero-stat-label">App Store Rating</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-value mono" data-count="50" data-suffix="K+">50K+</span>
+                <span class="hero-stat-label">Active Users</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-value mono" data-count="87" data-suffix="%">87%</span>
+                <span class="hero-stat-label">Posture Improved</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Live Posture Monitor ━━━ -->
+    <section class="monitor" id="monitor">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">LIVE DEMO</span>
+            <h2 class="section-title serif">Try it <em class="gold-text">right now.</em></h2>
+            <p class="section-sub">Experience CheckNeck's posture monitoring directly in your browser. Tilt your device or move your mouse to see real-time feedback.</p>
+        </div>
+
+        <div class="monitor-panel glass-elevated" data-anim="scale-in">
+            <div class="monitor-grid">
+                <!-- Score Display -->
+                <div class="monitor-score-area">
+                    <svg id="postureGauge" viewBox="0 0 280 280" width="280" height="280"></svg>
+                    <div class="monitor-score-text">
+                        <span class="monitor-score mono" id="scoreValue">--</span>
+                        <span class="monitor-status" id="scoreStatus">Initializing...</span>
+                    </div>
+                </div>
+
+                <!-- Axis Readouts -->
+                <div class="monitor-axes">
+                    <div class="axis-card glass-subtle">
+                        <div class="axis-visual">
+                            <svg id="axisPitch" viewBox="0 0 80 80" width="80" height="80"></svg>
+                        </div>
+                        <div class="axis-info">
+                            <span class="axis-label mono">PITCH</span>
+                            <span class="axis-value mono" id="pitchValue">0.0°</span>
+                        </div>
+                    </div>
+                    <div class="axis-card glass-subtle">
+                        <div class="axis-visual">
+                            <svg id="axisRoll" viewBox="0 0 80 80" width="80" height="80"></svg>
+                        </div>
+                        <div class="axis-info">
+                            <span class="axis-label mono">ROLL</span>
+                            <span class="axis-value mono" id="rollValue">0.0°</span>
+                        </div>
+                    </div>
+                    <div class="axis-card glass-subtle">
+                        <div class="axis-visual">
+                            <svg id="axisYaw" viewBox="0 0 80 80" width="80" height="80"></svg>
+                        </div>
+                        <div class="axis-info">
+                            <span class="axis-label mono">YAW</span>
+                            <span class="axis-value mono" id="yawValue">0.0°</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hex Rings Progress -->
+                <div class="monitor-rings">
+                    <svg id="monitorRings" viewBox="0 0 200 200" width="200" height="200"></svg>
+                    <div class="ring-labels">
+                        <div class="ring-label"><span class="ring-dot ring-dot--gold"></span> Posture</div>
+                        <div class="ring-label"><span class="ring-dot ring-dot--sage"></span> Stability</div>
+                        <div class="ring-label"><span class="ring-dot ring-dot--amber"></span> Alignment</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="monitor-controls">
+                <button class="btn btn-primary" id="startMonitor">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Start Monitoring
+                </button>
+                <button class="btn btn-ghost" id="calibrateBtn" disabled>Calibrate</button>
+                <span class="monitor-hint mono" id="monitorHint">Click Start to begin real-time posture tracking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Codex Identity ━━━ -->
+    <section class="identity" id="identity">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">CODEX VISUAL LANGUAGE</span>
+            <h2 class="section-title serif">Built on the <em class="gold-text">Golden Ratio.</em></h2>
+            <p class="section-sub">Every pixel follows phi = 1.618 — the same divine proportion Da Vinci used to map the perfect human body.</p>
+        </div>
+
+        <div class="identity-grid">
+            <div class="identity-card glass-standard" data-anim="fade-up">
+                <div class="identity-visual">
+                    <svg id="identitySpiral" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <h3 class="identity-title">Golden Spiral</h3>
+                <p class="identity-desc">The logarithmic spiral derived from phi governs every curve and animation in CheckNeck's interface.</p>
+            </div>
+            <div class="identity-card glass-standard" data-anim="fade-up" data-delay="100">
+                <div class="identity-visual">
+                    <svg id="identityMark" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <h3 class="identity-title">Vitruvian Spine Mark</h3>
+                <p class="identity-desc">72-tick compass bezel, C1-C7 vertebrae column, and Da Vinci's golden spiral — our anatomical brand mark.</p>
+            </div>
+            <div class="identity-card glass-standard" data-anim="fade-up" data-delay="200">
+                <div class="identity-visual">
+                    <svg id="identityHex" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <h3 class="identity-title">Hexagonal Phi-Rings</h3>
+                <p class="identity-desc">Three nested hexagonal progress rings track posture, squats, and neck exercises with neon glow feedback.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Features ━━━ -->
+    <section class="features" id="features">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">CODEX FEATURES</span>
+            <h2 class="section-title serif">Engineered like a <em class="gold-text">masterwork.</em></h2>
+            <p class="section-sub">Every feature crafted with the precision of a Renaissance workshop.</p>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-card bento-wide glass-standard" data-anim="fade-up">
+                <div class="bento-icon">
+                    <svg class="bento-svg" data-icon="airpods" viewBox="0 0 64 64" width="64" height="64"></svg>
+                </div>
+                <h3 class="bento-title">AirPods Head Tracking</h3>
+                <p class="bento-desc">Uses Apple's CMHeadphoneMotionManager to detect your head pitch, roll, and yaw with sub-degree precision. Works with AirPods Pro, 3rd gen+, and Max.</p>
+                <span class="bento-tag mono">100Hz SAMPLING</span>
+            </div>
+            <div class="bento-card glass-standard" data-anim="fade-up" data-delay="100">
+                <div class="bento-icon">
+                    <svg class="bento-svg" data-icon="score" viewBox="0 0 64 64" width="64" height="64"></svg>
+                </div>
+                <h3 class="bento-title">Real-Time Score</h3>
+                <p class="bento-desc">Live 0-100 posture score with dynamic hexagonal rings and haptic alerts when posture dips.</p>
+                <span class="bento-tag mono">HEXAGONAL UI</span>
+            </div>
+            <div class="bento-card glass-standard" data-anim="fade-up" data-delay="100">
+                <div class="bento-icon">
+                    <svg class="bento-svg" data-icon="protocol" viewBox="0 0 64 64" width="64" height="64"></svg>
+                </div>
+                <h3 class="bento-title">Smart Protocols</h3>
+                <p class="bento-desc">5 adaptive daily schedules from Sedentary to Athlete with intelligent exercise timing.</p>
+                <span class="bento-tag mono">AI SCHEDULING</span>
+            </div>
+            <div class="bento-card glass-standard" data-anim="fade-up" data-delay="200">
+                <div class="bento-icon">
+                    <svg class="bento-svg" data-icon="exercise" viewBox="0 0 64 64" width="64" height="64"></svg>
+                </div>
+                <h3 class="bento-title">Guided Exercises</h3>
+                <p class="bento-desc">Squats, neck rotations, and walking with real-time form detection via head motion.</p>
+                <span class="bento-tag mono">MOTION TRACKED</span>
+            </div>
+            <div class="bento-card bento-wide glass-standard" data-anim="fade-up" data-delay="200">
+                <div class="bento-icon">
+                    <svg class="bento-svg" data-icon="background" viewBox="0 0 64 64" width="64" height="64"></svg>
+                </div>
+                <h3 class="bento-title">Background Monitoring</h3>
+                <p class="bento-desc">Continuous posture tracking even when CheckNeck is in the background. Get gentle nudges when you slouch — without ever opening the app.</p>
+                <span class="bento-tag mono">ALWAYS ON</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ How It Works ━━━ -->
+    <section class="method" id="how-it-works">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">THE METHOD</span>
+            <h2 class="section-title serif">Three steps to <em class="gold-text">perfect posture.</em></h2>
+        </div>
+
+        <div class="steps">
+            <div class="step" data-anim="fade-up">
+                <div class="step-num mono">01</div>
+                <div class="step-visual">
+                    <svg class="step-svg" data-step="connect" viewBox="0 0 120 120" width="120" height="120"></svg>
+                </div>
+                <h3 class="step-title">Connect AirPods</h3>
+                <p class="step-desc">Just wear your AirPods. CheckNeck instantly connects to Apple's head motion sensors — no pairing, no setup.</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-anim="fade-up" data-delay="150">
+                <div class="step-num mono">02</div>
+                <div class="step-visual">
+                    <svg class="step-svg" data-step="calibrate" viewBox="0 0 120 120" width="120" height="120"></svg>
+                </div>
+                <h3 class="step-title">Calibrate in 3 Seconds</h3>
+                <p class="step-desc">Sit up straight for 3 seconds. CheckNeck captures your ideal posture as a personal baseline.</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-anim="fade-up" data-delay="300">
+                <div class="step-num mono">03</div>
+                <div class="step-visual">
+                    <svg class="step-svg" data-step="coaching" viewBox="0 0 120 120" width="120" height="120"></svg>
+                </div>
+                <h3 class="step-title">Get Real-Time Coaching</h3>
+                <p class="step-desc">A live posture score, gentle haptic nudges, and smart exercise prompts keep your spine aligned all day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ App Preview ━━━ -->
+    <section class="app-preview" id="app-preview">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono"><span class="badge-dot"></span> INSIDE THE APP</span>
+            <h2 class="section-title serif">See it in <em class="gold-text">action.</em></h2>
+            <p class="section-sub">Real screenshots from CheckNeck. Every interface element follows the Golden Ratio.</p>
+        </div>
+
+        <div class="preview-carousel">
+            <div class="phone-mockup" data-anim="fade-up">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="screenshot-home.png" alt="CheckNeck Home — Posture Radar at 100% Excellent" class="phone-screen" loading="lazy">
+                </div>
+                <div class="phone-caption">
+                    <h3>Posture Dashboard</h3>
+                    <p>Live hexagonal radar showing your real-time posture score, achievements ring, and hydration tracking.</p>
+                </div>
+            </div>
+
+            <div class="phone-mockup phone-mockup--hero" data-anim="fade-up" data-delay="150">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="screenshot-schedule.png" alt="CheckNeck Smart Schedule — Protocol Selection" class="phone-screen" loading="lazy">
+                </div>
+                <div class="phone-caption">
+                    <h3>Smart Schedule</h3>
+                    <p>Five adaptive protocols from Sedentary to Athlete. AI-timed exercise blocks throughout your day.</p>
+                </div>
+            </div>
+
+            <div class="phone-mockup" data-anim="fade-up" data-delay="300">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="screenshot-squats.png" alt="CheckNeck Squats — Hexagonal Reactor Core Tracking" class="phone-screen" loading="lazy">
+                </div>
+                <div class="phone-caption">
+                    <h3>Exercise Tracking</h3>
+                    <p>Hexagonal reactor-core UI tracks squat depth via head motion. Real-time rep counting and form scoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Technology ━━━ -->
+    <section class="technology" id="technology">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">THE SCIENCE</span>
+            <h2 class="section-title serif">Precision meets <em class="gold-text">anatomy.</em></h2>
+            <p class="section-sub">Apple's CMHeadphoneMotionManager provides medical-grade head tracking data at 100Hz.</p>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-card glass-standard" data-anim="fade-up">
+                <svg class="tech-svg" data-axis="pitch" viewBox="0 0 160 160" width="160" height="160"></svg>
+                <h3 class="tech-title">Pitch</h3>
+                <p class="tech-desc">Forward/backward head tilt. The primary indicator of slouching — detected with 0.1 degree precision.</p>
+                <div class="tech-formula mono">score = max(0, 100 - |pitch delta| * 4)</div>
+            </div>
+            <div class="tech-card glass-standard" data-anim="fade-up" data-delay="100">
+                <svg class="tech-svg" data-axis="roll" viewBox="0 0 160 160" width="160" height="160"></svg>
+                <h3 class="tech-title">Roll</h3>
+                <p class="tech-desc">Ear-to-shoulder tilt. Catches lateral imbalances that lead to muscle tension and headaches.</p>
+                <div class="tech-formula mono">threshold: 10deg good / 15deg fair</div>
+            </div>
+            <div class="tech-card glass-standard" data-anim="fade-up" data-delay="200">
+                <svg class="tech-svg" data-axis="yaw" viewBox="0 0 160 160" width="160" height="160"></svg>
+                <h3 class="tech-title">Yaw</h3>
+                <p class="tech-desc">Left/right rotation. Tracks neck twist exercises and detects asymmetric posture habits.</p>
+                <div class="tech-formula mono">drift-free via rotation rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Exercises ━━━ -->
+    <section class="exercises" id="exercises">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">GUIDED EXERCISES</span>
+            <h2 class="section-title serif">Move with <em class="gold-text">precision.</em></h2>
+            <p class="section-sub">Three motion-tracked exercises with real-time form detection through your AirPods.</p>
+        </div>
+
+        <div class="exercise-grid">
+            <div class="exercise-card glass-standard" data-anim="fade-up">
+                <div class="exercise-visual">
+                    <svg class="exercise-svg" data-exercise="squats" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <div class="exercise-info">
+                    <h3 class="exercise-title">Squats</h3>
+                    <p class="exercise-desc">World-vertical acceleration tracking detects squat depth independent of head orientation. Real-time form scoring.</p>
+                    <div class="exercise-stats">
+                        <span class="exercise-stat mono">DEPTH: 0-8 scale</span>
+                        <span class="exercise-stat mono">DETECTION: acceleration</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise-card glass-standard" data-anim="fade-up" data-delay="100">
+                <div class="exercise-visual">
+                    <svg class="exercise-svg" data-exercise="neck" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <div class="exercise-info">
+                    <h3 class="exercise-title">Neck Rotations</h3>
+                    <p class="exercise-desc">Yaw angular velocity integration tracks full left-right rotation range. Drift-free rep counting.</p>
+                    <div class="exercise-stats">
+                        <span class="exercise-stat mono">RANGE: +/- 70 degrees</span>
+                        <span class="exercise-stat mono">DETECTION: yaw rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise-card glass-standard" data-anim="fade-up" data-delay="200">
+                <div class="exercise-visual">
+                    <svg class="exercise-svg" data-exercise="walking" viewBox="0 0 200 200" width="200" height="200"></svg>
+                </div>
+                <div class="exercise-info">
+                    <h3 class="exercise-title">Posture Walking</h3>
+                    <p class="exercise-desc">Pedometer + gait filter relaxes thresholds during walking while still tracking upper body alignment.</p>
+                    <div class="exercise-stats">
+                        <span class="exercise-stat mono">CADENCE: 50+ steps/min</span>
+                        <span class="exercise-stat mono">DETECTION: pedometer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Pricing ━━━ -->
+    <section class="pricing" id="pricing">
+        <div class="section-header" data-anim="fade-up">
+            <span class="badge mono">INVESTMENT</span>
+            <h2 class="section-title serif">Choose your <em class="gold-text">Codex.</em></h2>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card glass-standard" data-anim="fade-up">
+                <div class="pricing-tier mono">FREE</div>
+                <div class="pricing-price"><span class="pricing-amount">$0</span></div>
+                <ul class="pricing-features">
+                    <li>3 posture checks per day</li>
+                    <li>5-minute monitoring sessions</li>
+                    <li>Basic posture score</li>
+                    <li>1 exercise type</li>
+                </ul>
+                <a href="#download" class="btn btn-ghost btn-full">Get Started</a>
+            </div>
+            <div class="pricing-card pricing-featured glass-elevated" data-anim="fade-up" data-delay="100">
+                <div class="pricing-popular mono">MOST POPULAR</div>
+                <div class="pricing-tier mono">PREMIUM</div>
+                <div class="pricing-price"><span class="pricing-amount">$4.99</span><span class="pricing-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited monitoring</li>
+                    <li>Background tracking</li>
+                    <li>All 3 exercise types</li>
+                    <li>Smart protocols</li>
+                    <li>Full posture history</li>
+                    <li>Custom alert timing</li>
+                </ul>
+                <a href="#download" class="btn btn-primary btn-full">Start Free Trial</a>
+            </div>
+            <div class="pricing-card glass-standard" data-anim="fade-up" data-delay="200">
+                <div class="pricing-tier mono">ANNUAL</div>
+                <div class="pricing-price"><span class="pricing-amount">$29.99</span><span class="pricing-period">/year</span></div>
+                <div class="pricing-save mono">SAVE 50%</div>
+                <ul class="pricing-features">
+                    <li>Everything in Premium</li>
+                    <li>Priority support</li>
+                    <li>Early access to features</li>
+                    <li>6 months free</li>
+                </ul>
+                <a href="#download" class="btn btn-ghost btn-full">Save 50%</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ━━━ Da Vinci Quote ━━━ -->
+    <section class="quote-section" data-anim="fade-up">
+        <div class="quote-ornament">
+            <svg id="quoteSpiral" viewBox="0 0 80 80" width="80" height="80"></svg>
+        </div>
+        <blockquote class="quote serif">"Simplicity is the ultimate sophistication."</blockquote>
+        <cite class="quote-cite">— Leonardo da Vinci</cite>
+        <div class="quote-ornament">
+            <svg id="quoteSpiralBottom" viewBox="0 0 80 80" width="80" height="80"></svg>
+        </div>
+    </section>
+
+    <!-- ━━━ Download CTA ━━━ -->
+    <section class="download" id="download">
+        <div class="download-visual" data-anim="scale-in">
+            <svg id="downloadMark" viewBox="0 0 160 160" width="160" height="160"></svg>
+        </div>
+        <h2 class="section-title serif" data-anim="fade-up">Begin your <em class="gold-text">Codex journey.</em></h2>
+        <p class="section-sub" data-anim="fade-up">Download CheckNeck free today. Your spine will thank you.</p>
+        <a href="#" class="btn btn-primary btn-lg" data-anim="fade-up"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg> Download on the App Store</a>
+        <p class="download-req mono" data-anim="fade-up">Requires iPhone with iOS 17+ and AirPods Pro / 3rd gen+ / Max</p>
+        <div class="trust-badges" data-anim="fade-up">
+            <span class="trust-badge glass-subtle"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="12" height="10" rx="2"/><path d="M7 8V5a3 3 0 016 0v3"/></svg> 100% Privacy</span>
+            <span class="trust-badge glass-subtle"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="14" height="14" rx="2"/><line x1="3" y1="10" x2="17" y2="10"/></svg> No Camera</span>
+            <span class="trust-badge glass-subtle"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 3v7l3 3H4l3-3V3"/><path d="M8 17a2 2 0 004 0"/></svg> Low Battery</span>
+        </div>
+    </section>
+
+    <!-- ━━━ Footer ━━━ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="nav-wordmark">Check<strong>Neck</strong></span>
+                <p class="footer-tagline">Da Vinci's Codex for Perfect Posture</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="footer-copy mono">&copy; 2026 Allevamentum. Crafted with the precision of a Renaissance workshop.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
